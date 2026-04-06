@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff6a00"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6fe000"/>
+      <stop offset="100%" stop-color="#00a63c"/>
+    </linearGradient>
+    <linearGradient id="darkGreenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00b050"/>
+      <stop offset="100%" stop-color="#008c3f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top cloche -->
+  <circle cx="180" cy="34" r="14" fill="url(#orangeGrad)"/>
+  <path d="M45 145
+           C60 80, 110 45, 180 45
+           C250 45, 300 80, 315 145
+           L270 145
+           C260 95, 230 72, 180 72
+           C130 72, 100 95, 90 145
+           Z"
+        fill="url(#orangeGrad)"/>
+
+  <!-- Fork prongs -->
+  <rect x="166" y="96" width="12" height="64" rx="6" fill="#ff6a00"/>
+  <rect x="188" y="96" width="12" height="64" rx="6" fill="#ff6a00"/>
+
+  <!-- Green horizontal bar -->
+  <rect x="28" y="145" width="304" height="20" rx="10" fill="url(#darkGreenGrad)"/>
+
+  <!-- Bottom pin -->
+  <path d="M70 165
+           C70 248, 124 290, 180 338
+           C236 290, 290 248, 290 165
+           Z"
+        fill="url(#greenGrad)"/>
+
+  <!-- Inner dark shape -->
+  <path d="M110 165
+           L150 165
+           C150 210, 150 214, 166 228
+           C177 238, 180 246, 180 264
+           C180 246, 183 238, 194 228
+           C210 214, 210 210, 210 165
+           L250 165
+           C248 213, 230 237, 205 256
+           C190 267, 184 278, 180 288
+           C176 278, 170 267, 155 256
+           C130 237, 112 213, 110 165
+           Z"
+        fill="url(#darkGreenGrad)"/>
+
+  <!-- subtle inner stroke -->
+  <path d="M92 176
+           C96 242, 139 276, 180 311
+           C221 276, 264 242, 268 176"
+        fill="none" stroke="#93d500" stroke-width="2" opacity="0.65"/>
+</svg>
