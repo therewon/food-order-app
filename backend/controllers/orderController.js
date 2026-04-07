@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // placing user order for frontend
 const placeOrder = async(req, res) => {
 
-    const frontend_url = "http://localhost:5174"
+    const frontend_url = "https://foodhub-therewon.vercel.app"
 
     try {
         const newOrder = new orderModel({
@@ -27,7 +27,7 @@ const placeOrder = async(req, res) => {
                 product_data: {
                     name: item.name
                 },
-                unit_amount: item.price*100*80
+                unit_amount: item.price*1.7
             },
             quantity: item.quantity
         }))
@@ -38,7 +38,7 @@ const placeOrder = async(req, res) => {
                 product_data: {
                     name: "Delivery Cahrges"
                 },
-                unit_amount: 2*100*80
+                unit_amount: 2*1.7
             },
             quantity: 1
         })
